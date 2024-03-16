@@ -37,3 +37,30 @@ h2 {
 }
 
 /* Zde je místo pro vaše styly.*/
+.article__image {
+  max-width: 300px;
+  min-width: 250px;
+  flex: 1 1 40%;
+}
+
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.article__text {
+  flex: 1 1 60%;
+}
+
+/* Nastylujte flexibilní layout článku. Na širších obrazovkách, 
+kde se obrázek a text vejdou vedle sebe, by měl obrázek zabírat 
+40% boxu a text 60% boxu.
+
+Jak se bude zmenšovat obrazovka, bude se zmenšovat šířka obrázku 
+i textu. Když dosáhne obrázek své minimální velikosti 250px, měl 
+by se text zalomit dolů pod něj.
+
+Aby se nám obrázek při zvětšování obrazovky moc neroztáhl, měl by 
+mít nastavenou maximální šířku 300px. */
